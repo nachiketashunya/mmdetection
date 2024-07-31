@@ -79,7 +79,7 @@ class BaseDetDataset(BaseDataset):
             self.load_proposals()
         # filter illegal data, such as data that has no annotations.
         dup_list = self.data_list.copy()
-        self.data_list = self.filter_data()
+        # self.data_list = self.filter_data()
 
         if len(self.data_list) == 0:
             self.data_list = dup_list
